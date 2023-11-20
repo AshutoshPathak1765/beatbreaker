@@ -4,7 +4,7 @@ import aboutImage from "../assets/aboutImage.jpg";
 function About() {
   return (
     <div className="mt-4">
-      <h1 className="text-center text-5xl" style={{ color: "#E3D399", fontFamily:"Titan One"}}>
+      <h1 className="text-center lg:text-5xl sm:text-3xl" style={{ color: "#E3D399", fontFamily:"Titan One"}}>
         About Us
       </h1>
       <div className="flex gap-5 px-5 pt-5">

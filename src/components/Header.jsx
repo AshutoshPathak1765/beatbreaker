@@ -12,9 +12,9 @@ const menuItems = [
 ];
 function Header() {
   return (
-    <div className='p-2' style={{fontFamily:"Inter"}}>
-    <Navbar disableAnimation isBordered>
-      <NavbarContent className="sm:hidden" justify="start">
+    <div className='p-2' style={{fontFamily:"Inter",width:"100%"}}>
+    <Navbar disableAnimation isBordered style={{width:"100%"}}>
+      <NavbarContent className="sm:hidden" justify='start'>
         <NavbarMenuToggle />
       </NavbarContent>
 
