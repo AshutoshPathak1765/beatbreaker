@@ -26,7 +26,7 @@ const list = [
 
 function Team() {
   return (
-    <div>
+    <div id="team">
       <h1
         className="text-5xl text-center"
         style={{ fontFamily: "Titan One", color: "#E3D399" }}

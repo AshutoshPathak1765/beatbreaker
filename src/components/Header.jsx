@@ -12,7 +12,7 @@ const menuItems = [
 ];
 function Header() {
   return (
-    <div className='p-2' style={{fontFamily:"Inter",width:"100%"}}>
+    <div className='p-2 ' style={{fontFamily:"Inter",width:"100%"}}>
     <Navbar disableAnimation isBordered style={{width:"100%"}}>
       <NavbarContent className="sm:hidden" justify='start'>
         <NavbarMenuToggle />
@@ -37,22 +37,22 @@ function Header() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page"  style={{color:"#FBE4C1"}} className='text-2xl font-bold'>
+          <Link href="#events" aria-current="page"  style={{color:"#FBE4C1"}} className='text-2xl font-bold'>
           Events
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link style={{color:"#FBE4C1"}} href="#" className='text-2xl font-bold'>
+          <Link style={{color:"#FBE4C1"}} href="#team" className='text-2xl font-bold'>
           Team
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link style={{color:"#FBE4C1"}} href="#" className='text-2xl font-bold'>
+          <Link style={{color:"#FBE4C1"}} href="#aboutus" className='text-2xl font-bold'>
           AboutUs
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link style={{color:"#FBE4C1"}} href="#" className='text-2xl font-bold'>
+          <Link style={{color:"#FBE4C1"}} href="#contactus" className='text-2xl font-bold'>
           ContactUs
           </Link>
         </NavbarItem>

@@ -8,7 +8,7 @@ const images = [eventsPic_1, eventsPic_2];
 
 function Events() {
   return (
-    <div>
+    <div id="events">
       <h1
         className="text-center text-5xl"
         style={{ color: "#E3D399", fontFamily: "Titan One" }}

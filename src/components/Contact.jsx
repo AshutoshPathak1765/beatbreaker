@@ -3,7 +3,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div>
+    <div id="contactus">
       <div className="flex flex-col justify-start p-3 gap-5">
         <h1 className="text-left m-10 text-5xl"
           style={{ fontFamily: "Titan One", color: "#E3D399" }}

@@ -15,7 +15,7 @@ function Home() {
       <About />
       <Events />
       <Gallery />
-      <Team />
+      <Team  />
       <Contact />
     </div>
   );
