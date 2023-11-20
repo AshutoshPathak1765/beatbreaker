@@ -6,6 +6,7 @@ import Gallery_3 from "../assets/Gallery_3.jpg";
 import Gallery_4 from "../assets/Gallery_4.jpg";
 import Gallery_5 from "../assets/Gallery_5.jpg";
 import Gallery_6 from "../assets/Gallery_6.jpg";
+import { useNavigate } from "react-router-dom";
 
 const images = [
   Gallery_1,
@@ -17,6 +18,7 @@ const images = [
 ];
 
 function Gallery() {
+  const navigate = useNavigate();
   return (
     <div>
       <h1
@@ -33,16 +35,14 @@ function Gallery() {
           justifyContent: "space-around",
         }}
       >
-        <Image isZoomed width={400} src={Gallery_1} />
-        <Image isZoomed width={400} src={Gallery_2} />
-        <Image isZoomed width={400} src={Gallery_3} />
-        <Image isZoomed width={400} src={Gallery_4} />
-        <Image isZoomed width={400} src={Gallery_5} />
-        <Image isZoomed width={400} src={Gallery_6} />
+        {images.map((item, index) => (
+          <Image isZoomed width={400} src={item} />
+        ))}
       </div>
       <h1
-        className="p-2 text-right text-2xl"
+        className="p-2 text-right text-2xl hover:cursor-pointer"
         style={{ fontFamily: "Titan One" }}
+        onClick={() => navigate("/view")}
       >
         See more...
       </h1>

@@ -1,27 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Events from './components/Events'
-import Gallery from './components/Gallery'
-import Team from './components/Team'
-import Contact from './components/Contact'
+import { useState } from "react";
+import "./App.css";
+
+import Home from "./Page/Home";
+
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import View from "./Page/View";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div className='dark text-foreground bg-background w-full'>
-      <Header />
-      <Hero />
-      <About />
-      <Events />
-      <Gallery />
-      <Team />
-      <Contact />
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/view" element={<View />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

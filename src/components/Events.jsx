@@ -2,7 +2,9 @@ import React from "react";
 import eventsPic_1 from "../assets/eventsPic_1.jpg";
 import eventsPic_2 from "../assets/eventsPic_2.jpg";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
-import { Image } from "@nextui-org/react";
+import { Image, image } from "@nextui-org/react";
+
+const images = [eventsPic_1, eventsPic_2];
 
 function Events() {
   return (
@@ -14,10 +16,12 @@ function Events() {
         Events
       </h1>
       <div className="pt-5 flex justify-between">
-        <FaCaretLeft color="#D9D9D9" size={150}  />
+        <FaCaretLeft color="#D9D9D9" size={150} />
         <div className="flex justify-center gap-3">
-        <Image isZoomed width={250} src={eventsPic_1} />
-        <Image isZoomed width={250} src={eventsPic_2} />
+          {
+          images.map((item,index)=> <Image isZoomed width={250} src={item} />)
+          
+          }
         </div>
         <FaCaretRight color="#D9D9D9" size={150} />
       </div>
