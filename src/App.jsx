@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className='dark text-foreground bg-background w-full'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/view" element={<View />} />
